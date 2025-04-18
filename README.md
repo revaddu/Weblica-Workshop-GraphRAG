@@ -12,9 +12,13 @@ In this workshop, you'll build an interactive app using Streamlit that:
 
 ## 🔧 Requirements
 
-- Python 3.9 or above
-- Docker & Docker compose
-> We recommend starting Docker Compose before the workshop, once you have a stable internet connection.
+- Python 3.9 or above ([Windows](https://kinsta.com/knowledgebase/install-python/#windows) / [Linux](https://kinsta.com/knowledgebase/install-python/#linux) / [Mac](hhttps://kinsta.com/knowledgebase/install-python/#mac) ):
+
+- [Docker](https://docs.docker.com/engine/install/) & [Docker compose](https://docs.docker.com/compose/install/)
+
+> Instead of Docker CE you can use [Rancher Desktop](https://docs.rancherdesktop.io/getting-started/installation) - a full OpenSource solution
+
+> We recommend you tostart Docker Compose once before the workshop. After cloning this repository, and when you have a stable internet connection, do like described under *🚀 Running the App*.
 
 ## 🧰 Install Dependencies
 
@@ -44,24 +48,37 @@ pip install -r requirements.txt
 
 ## 🔑 Environment Variables
 Create a .env file in the project root:
+- On **Linux/macOS**:
 ```bash
-GEMINI_API_KEY=your_gemini_api_key
+echo GEMINI_API_KEY=your_gemini_api_key > .env
 ```
+- On **Windows**:
+```bash
+echo "GEMINI_API_KEY=your_gemini_api_key" > .env
+```
+
 Make sure to enable Generative AI access in your Google Cloud project and create an API key.
-> Google Cloud projects are free for developers, you don't have to worry about billing.
+
+>*!! Google Cloud projects are free for developers, you don't have to worry about billing.*
 
 ## 🚀 Running the App
-Start Memgraph and Memgraph lab using docker compose
+Start Memgraph and Memgraph lab using docker compose. This will pull [memgraph-lab](https://hub.docker.com/r/memgraph/lab) and [memgraph](https://hub.docker.com/r/memgraph/memgraph) docker images and would take some time, depending on your internet connection speed - both images are aprox. 450MB in total.
+
 ```bash
-pull 
+git clone https://github.com/revaddu/Weblica-Workshop-GraphRAG.git ./
+docker compose up
+``` 
+You can also start Docker containers in detached mode: 
+```bash
 docker compose up -d
 ``` 
-
+---
+## This part is missing and will be published soon before the workshop starts!
 Start the Streamlit App:
 ```bash
 streamlit run app.py
 ```
-
+---
 ## 🧠 Workshop Features
 
 ### 1. Image-Based Search
