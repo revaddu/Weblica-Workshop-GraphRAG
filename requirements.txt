@@ -1,0 +1,9 @@
+streamlit
+torch
+torchvision
+transformers
+google
+google.genai
+python-dotenv
+watchdog
+neo4j
