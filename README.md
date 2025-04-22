@@ -24,8 +24,7 @@ In this workshop, you'll build an interactive app using Streamlit that:
 
 #### Step 1: Create a Virtual Environment in your project root
 ```bash
-cd myWorkspaceProjectRoot
-mkdir fp2k && cd fp2k
+cd Weblica-Workshop-GraphRAG
 python -m venv .venv
 ```
 > This will create a `.venv` directory in your project root.
