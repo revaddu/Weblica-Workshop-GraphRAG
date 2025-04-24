@@ -16,7 +16,7 @@ In this workshop, you'll build an interactive app using Streamlit that:
 
 - [Docker](https://docs.docker.com/engine/install/) & [Docker compose](https://docs.docker.com/compose/install/)
 
-> Instead of Docker CE you can use [Rancher Desktop](https://docs.rancherdesktop.io/getting-started/installation) - a full OpenSource solution
+> Instead of Docker CE you can use [Rancher Desktop](https://docs.rancherdesktop.io/getting-started/installation) - a full OpenSource solution.
 
 > We recommend you to start Docker Compose at least once before the workshop. After cloning this repository, and when you have a stable internet connection, do like described under *🚀 Running the App*.
 
