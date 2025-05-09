@@ -462,7 +462,7 @@ def app():
         )
         uploaded_images = st.file_uploader(
             "Upload images...",
-            type=["jpg", "jpeg", "png"],
+            type=["jpg", "jpeg", "png", "JPG"],
             accept_multiple_files=True,
             key="multi_image_upload",
         )
