@@ -518,7 +518,7 @@ def app():
     with tab1:
         st.subheader("Upload an image for querying")
         query_image = st.file_uploader(
-            "Upload image...", type=["jpg", "jpeg", "png"], key="image_query_upload"
+            "Upload image...", type=["jpg", "jpeg", "png", "JPG"], key="image_query_upload"
         )
 
         if query_image:
